@@ -1,0 +1,95 @@
+[
+    {
+        "full_path": "Y:/tcr1n15/Data/YT_comments/",
+        "Description": "Comments Downloads with Pis.",
+        "Module": "PiCluster",
+        "Department": "Quant",
+        "RunTime": "2024-03-17_18-49-30",
+        "current_size": 3535.947226524353,
+        "changed": false
+    },
+    {
+        "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\AutomationStatus\\Size_Change\\last_run_data.json",
+        "Description": "Is monitoring system running",
+        "Module": "AutomationStatus",
+        "Department": "Operations",
+        "RunTime": "2024-03-17_18-51-36",
+        "current_size": 0.0009927749633789062,
+        "changed": false
+    },
+    {
+        "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\AutomationStatus\\ExternalPing\\ping_time_status.txt",
+        "Description": "External Ping",
+        "Module": "AutomationStatus",
+        "Department": "Operations",
+        "RunTime": "2024-03-17_18-51-36",
+        "current_size": 0.0006866455078125,
+        "changed": true,
+        "size_difference": 0.0002288818359375
+    },
+    {
+        "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\AutomationStatus\\RunningTasksProcesses",
+        "Description": "Process/task Monitoring for: Are all processes runnning.",
+        "Module": "AutomationStatus",
+        "Department": "Operations",
+        "RunTime": "2024-03-17_18-51-36",
+        "current_size": 0.0075893402099609375,
+        "changed": true,
+        "size_difference": 0.0018787384033203125
+    },
+    {
+        "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\data\\tasks_agenda",
+        "Description": "Are ClickUp tasks being checked?",
+        "Module": "ClickUPAPI",
+        "Department": "Operations",
+        "RunTime": "2024-03-17_18-51-36",
+        "current_size": 0.120452880859375,
+        "changed": false
+    },
+    {
+        "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\FitBiT\\fitbit_data/",
+        "Description": "Is Employee Healthy?",
+        "Module": "ClickUPAPI",
+        "Department": "Operations",
+        "RunTime": "2024-03-17_18-51-36",
+        "current_size": 0.004364013671875,
+        "changed": false
+    },
+    {
+        "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\data\\final_scores",
+        "Description": "Has Personal Assistant created todays agenda?",
+        "Module": "DailyReport",
+        "Department": "Operations",
+        "RunTime": "2024-03-17_18-51-36",
+        "current_size": 0.013253211975097656,
+        "changed": false
+    },
+    {
+        "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\Accounting\\data",
+        "Description": "Has accountant fetched data from Bank?",
+        "Module": "Accounting",
+        "Department": "BookKeeping",
+        "RunTime": "2024-03-17_18-51-36",
+        "current_size": 0.627354621887207,
+        "changed": true,
+        "size_difference": 0.06957244873046875
+    },
+    {
+        "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\SocialMediaManager\\data_manager\\monitoring",
+        "Description": "Has social Media Manager posted?",
+        "Module": "SocialMediaManager",
+        "Department": "SocialMediaManager",
+        "RunTime": "2024-03-17_18-51-37",
+        "current_size": 0.00041484832763671875,
+        "changed": false
+    },
+    {
+        "full_path": "Y:/tcr1n15\\PiCluster\\NightlyScraper\\YT",
+        "Description": "Were new Tags created?",
+        "Module": "Quant",
+        "Department": "Quant",
+        "RunTime": "2024-03-17_18-51-37",
+        "current_size": 0.03637504577636719,
+        "changed": false
+    }
+]

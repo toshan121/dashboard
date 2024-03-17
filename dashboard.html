@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        .table-container {
+            margin-bottom: 20px;
+        }
+
+        .table-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>System Status</h1>
+    
+    <!-- Table for the first JSON data -->
+    <div class="table-container">
+        <h2 class="table-title">Scheduler</h2>
+        <div id="table-container-1"></div>
+    </div>
+
+    <!-- Table for the second JSON data -->
+    <div class="table-container">
+        <h2 class="table-title">Tasks</h2>
+        <div id="table-container-2"></div>
+    </div>
+    
+
+    <!-- Table for the third JSON data -->
+    <div class="table-container">
+        <h2 class="table-title">Processes</h2>
+        <div id="table-container-3"></div>
+    </div>
+    
+    <div class="table-container">
+        <h2 class="table-title">Data Pipeline</h2>
+        <div id="table-container-3"></div>
+    </div>
+    <script>
+        // Function to create table from JSON data
+        function createTable(jsonData, containerId) {
+            var container = document.getElementById(containerId);
+            var table = document.createElement('table');
+            var thead = table.createTHead();
+            var tbody = table.createTBody();
+            var headRow = thead.insertRow();
+
+            // Create table header
+            for (var key in jsonData[0]) {
+                var th = document.createElement('th');
+                th.textContent = key;
+                headRow.appendChild(th);
+            }
+
+            // Create table body
+            jsonData.forEach(function(obj) {
+                var row = tbody.insertRow();
+                for (var key in obj) {
+                    var cell = row.insertCell();
+                    cell.textContent = obj[key];
+                }
+            });
+
+            container.appendChild(table);
+        }
+
+        // Fetch JSON data from files
+        fetch('scheduler_status_data_latest.jsonx')
+            .then(response => response.json())
+            .then(data => createTable(data, 'table-container-1'))
+            .catch(error => console.error('Error fetching JSON:', error));
+
+        fetch('task_status_latest.json')
+            .then(response => response.json())
+            .then(data => createTable(data, 'table-container-2'))
+            .catch(error => console.error('Error fetching JSON:', error));
+
+        fetch('process_status_latest.json')
+            .then(response => response.json())
+            .then(data => createTable(data, 'table-container-3'))
+            .catch(error => console.error('Error fetching JSON:', error));
+            
+                    fetch('size_change_latest.json')
+            .then(response => response.json())
+            .then(data => createTable(data, 'table-container-4'))
+            .catch(error => console.error('Error fetching JSON:', error));
+            
+            
+            
+            
+    </script>
+</body>
+</html>

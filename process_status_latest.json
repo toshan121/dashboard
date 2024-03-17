@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Server ClickUp",
+        "status": false,
+        "Module": "ClickUP_get_tasks_json.py"
+    },
+    {
+        "name": "Self.Main Server Backend",
+        "status": true,
+        "Module": "Record_Time_Server.py"
+    },
+    {
+        "name": "Accounting",
+        "status": true,
+        "Module": "main_accounting.py"
+    },
+    {
+        "name": "Social Media Manager Post Engine",
+        "status": true,
+        "Module": "MAIN_PostCommentSelenium.py"
+    },
+    {
+        "name": "Social Media Manager Comment Writer",
+        "status": true,
+        "Module": "MAIN_Make_First_Post.py"
+    }
+]
