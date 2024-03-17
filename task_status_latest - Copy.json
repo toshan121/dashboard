@@ -1,0 +1,37 @@
+[
+    {
+        "name": "GoogleDriveFS",
+        "status": true,
+        "Module": "C:\\Program Files\\Google\\Drive File Stream\\86.0.9.0\\GoogleDriveFS.exe"
+    },
+    {
+        "name": "Redis Server",
+        "status": true,
+        "Module": "C:\\Program Files\\Memurai\\memurai.exe"
+    },
+    {
+        "name": "OneDrive",
+        "status": true,
+        "Module": "C:\\Users\\tcr1n15\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe"
+    },
+    {
+        "name": "SharePoint",
+        "status": true,
+        "Module": "C:\\Users\\tcr1n15\\AppData\\Local\\Microsoft\\OneDrive\\24.020.0128.0003\\Microsoft.SharePoint.exe"
+    },
+    {
+        "name": "ClickUp",
+        "status": true,
+        "Module": "C:\\Users\\tcr1n15\\AppData\\Local\\Programs\\ClickUp\\ClickUp.exe"
+    },
+    {
+        "name": "VNC",
+        "status": true,
+        "Module": "C:\\Program Files\\RealVNC\\VNC Server\\vncserverui.exe"
+    },
+    {
+        "name": "Surf VPN",
+        "status": true,
+        "Module": "C:\\Program Files (x86)\\Surfshark\\Surfshark.exe"
+    }
+]
