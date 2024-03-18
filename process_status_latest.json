@@ -1,7 +1,7 @@
 [
     {
         "name": "Server ClickUp",
-        "status": false,
+        "status": true,
         "Module": "ClickUP_get_tasks_json.py"
     },
     {
@@ -21,7 +21,7 @@
     },
     {
         "name": "Social Media Manager Comment Writer",
-        "status": true,
+        "status": false,
         "Module": "MAIN_Make_First_Post.py"
     }
 ]

@@ -11,7 +11,7 @@
     },
     {
         "name": "OneDrive",
-        "status": true,
+        "status": false,
         "Module": "C:\\Users\\tcr1n15\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe"
     },
     {

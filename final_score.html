@@ -1,171 +1,82 @@
 ```html
-<style>
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>Overall Score</h1>
+  <p>**[Today's Date]**</p>
+  <p>The following table shows the overall score for each category:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sleep quality</td>
+        <td>70%</td>
+      </tr>
+      <tr>
+        <td>Productivity</td>
+        <td>60%</td>
+      </tr>
+      <tr>
+        <td>Tasks completed, overdued, deficit</td>
+        <td>50%</td>
+      </tr>
+      <tr>
+        <td>Activities</td>
+        <td>60%</td>
+      </tr>
+      <tr>
+        <td>Cash flow,burn,runway.</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>Punctuality</td>
+        <td>80%</td>
+      </tr>
+    </tbody>
+  </table>
 
-  .section {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+  <p>**Analysis:**</p>
+  <ul>
+    <li>Sleep quality is below average, indicating that there may be issues with sleep hygiene or underlying health conditions.</li>
+    <li>Productivity is average, indicating that there may be some areas for improvement in time management and task prioritization.</li>
+    <li>Tasks completed, overdued, deficit is below average, indicating that the team may be struggling to keep up with the workload or that there may be bottlenecks in the process.</li>
+    <li>Activities are average, indicating that there is a good balance between work and personal activities.</li>
+    <li>Cash flow,burn,runway is not available, so no analysis can be provided.</li>
+    <li>Punctuality is above average, indicating that the person is generally on time for appointments and meetings.</li>
+  </ul>
 
-  .section-title {
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-
-  .metric {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-
-  .metric-label {
-    font-weight: bold;
-    width: 50%;
-  }
-
-  .metric-value {
-    text-align: right;
-    width: 50%;
-  }
-
-  .good {
-    color: green;
-  }
-
-  .ok {
-    color: orange;
-  }
-
-  .bad {
-    color: red;
-  }
-</style>
-
-<div class="container">
-  <div class="section">
-    <h2 class="section-title">Sleep Quality</h2>
-    <div class="metric">
-      <div class="metric-label">Average Sleep Duration</div>
-      <div class="metric-value">6 hours</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Sleep Consistency</div>
-      <div class="metric-value">60%</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Sleep Efficiency</div>
-      <div class="metric-value">85%</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Overall Sleep Quality</div>
-      <div class="metric-value good">70%</div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">Productivity</h2>
-    <div class="metric">
-      <div class="metric-label">Average Daily Productivity</div>
-      <div class="metric-value">7 hours</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Task Completion Rate</div>
-      <div class="metric-value">80%</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Focus Time</div>
-      <div class="metric-value">3 hours</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Overall Productivity</div>
-      <div class="metric-value good">80%</div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">Tasks</h2>
-    <div class="metric">
-      <div class="metric-label">Tasks Created</div>
-      <div class="metric-value">10 per day</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Tasks Completed</div>
-      <div class="metric-value">8 per day</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Task Deficit</div>
-      <div class="metric-value">2 per day</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Overall Task Management</div>
-      <div class="metric-value ok">70%</div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">Activities</h2>
-    <div class="metric">
-      <div class="metric-label">Physical Activity</div>
-      <div class="metric-value">3 days per week</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Social Activities</div>
-      <div class="metric-value">2 days per week</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Relaxation Activities</div>
-      <div class="metric-value">4 days per week</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Overall Activity Balance</div>
-      <div class="metric-value good">75%</div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">Cash Flow</h2>
-    <div class="metric">
-      <div class="metric-label">Revenue</div>
-      <div class="metric-value">$10,000 per month</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Expenses</div>
-      <div class="metric-value">$8,000 per month</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Profit</div>
-      <div class="metric-value">$2,000 per month</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Runway</div>
-      <div class="metric-value">6 months</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Cash Flow Health</div>
-      <div class="metric-value ok">70%</div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">Punctuality</h2>
-    <div class="metric">
-      <div class="metric-label">On-Time Arrivals</div>
-      <div class="metric-value">80%</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Late Arrivals</div>
-      <div class="metric-value">20%</div>
-    </div>
-    <div class="metric">
-      <div class="metric-label">Overall Punctuality</div>
-      <div class="metric-value ok">80%</div>
-    </div>
-  </div>
-</div>
+  <p>**Action:**</p>
+  <ul>
+    <li>Investigate the reasons for poor sleep quality and take steps to improve sleep hygiene or address any underlying health conditions.</li>
+    <li>Identify areas for improvement in time management and task prioritization, and implement strategies to improve productivity.</li>
+    <li>Investigate the reasons for the deficit in task completion and take steps to address any bottlenecks or resource constraints.</li>
+    <li>Continue to maintain a healthy balance between work and personal activities.</li>
+    <li>Monitor cash flow, burn, and runway to ensure financial stability.</li>
+    <li>Continue to be punctual for appointments and meetings.</li>
+  </ul>
+</body>
+</html>
 ```
