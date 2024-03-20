@@ -11,12 +11,17 @@
     },
     {
         "name": "Accounting",
-        "status": true,
+        "status": false,
         "Module": "main_accounting.py"
     },
     {
+        "name": "Resources Monitor",
+        "status": false,
+        "Module": "MAIN_resource_monitor.py"
+    },
+    {
         "name": "Social Media Manager Post Engine",
-        "status": true,
+        "status": false,
         "Module": "MAIN_PostCommentSelenium.py"
     },
     {
