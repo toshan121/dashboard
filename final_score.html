@@ -1,57 +1,20 @@
 ```html
 <style>
-  body {
-    font-family: sans-serif;
+  .good {
+    color: green;
   }
-
-  table {
-    border-collapse: collapse;
+  .ok {
+    color: orange;
   }
-
-  td, th {
-    border: 1px solid black;
-    padding: 5px;
+  .bad {
+    color: red;
   }
 </style>
 
-<table>
-  <thead>
-    <tr>
-      <th>Persona_Business Metric</th>
-      <th>Score (%)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sleep quality</td>
-      <td>60</td>
-    </tr>
-    <tr>
-      <td>Productivity</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <td>Tasks completed, overdued, deficit</td>
-      <td>80</td>
-    </tr>
-    <tr>
-      <td>Activities</td>
-      <td>90</td>
-    </tr>
-    <tr>
-      <td>Cash flow,burn,runway.</td>
-      <td>75</td>
-    </tr>
-    <tr>
-      <td>Punctuality</td>
-      <td>85</td>
-    </tr>
-  </tbody>
-</table>
-
-**[Today's Date]**
-
-**Overall Score:** 78%
-
-**Comment:** Overall, this persona is performing well across a range of business metrics. There are a few areas where there is room for improvement, such as sleep quality and productivity. However, overall, this persona is on track to success.
+<p>Sleep quality: <span class="good">80%</span></p>
+<p>Productivity: <span class="ok">70%</span></p>
+<p>Tasks completed, overdued, deficit: <span class="bad">50%</span></p>
+<p>Activities: <span class="good">80%</span></p>
+<p>Cash flow,burn,runway: <span class="ok">70%</span></p>
+<p>Punctuality: <span class="good">90%</span></p>
 ```
