@@ -1,20 +1,60 @@
 ```html
 <style>
-  .good {
-    color: green;
+  table {
+    border-collapse: collapse;
+    width: 100%;
   }
-  .ok {
-    color: orange;
-  }
-  .bad {
-    color: red;
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
   }
 </style>
 
-<p>Sleep quality: <span class="good">80%</span></p>
-<p>Productivity: <span class="ok">70%</span></p>
-<p>Tasks completed, overdued, deficit: <span class="bad">50%</span></p>
-<p>Activities: <span class="good">80%</span></p>
-<p>Cash flow,burn,runway: <span class="ok">70%</span></p>
-<p>Punctuality: <span class="good">90%</span></p>
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sleep quality</td>
+      <td>60%</td>
+    </tr>
+    <tr>
+      <td>Productivity</td>
+      <td>70%</td>
+    </tr>
+    <tr>
+      <td>Tasks completed</td>
+      <td>80%</td>
+    </tr>
+    <tr>
+      <td>Activities</td>
+      <td>75%</td>
+    </tr>
+    <tr>
+      <td>Cash flow, burn, runway</td>
+      <td>65%</td>
+    </tr>
+    <tr>
+      <td>Punctuality</td>
+      <td>90%</td>
+    </tr>
+  </tbody>
+</table>
+
+**Overall:** 75%
+
+**Comments:**
+
+* Sleep quality: Needs improvement.
+* Productivity: Good, but could be better.
+* Tasks completed: Excellent.
+* Activities: Good.
+* Cash flow, burn, runway: Fair.
+* Punctuality: Excellent.
 ```

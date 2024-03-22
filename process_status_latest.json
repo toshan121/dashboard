@@ -11,7 +11,7 @@
     },
     {
         "name": "Accounting",
-        "status": false,
+        "status": true,
         "Module": "main_accounting.py"
     },
     {
