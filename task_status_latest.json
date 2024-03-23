@@ -30,6 +30,11 @@
         "Module": "C:\\Program Files\\RealVNC\\VNC Server\\vncserverui.exe"
     },
     {
+        "name": "Ollama",
+        "status": false,
+        "Module": "C:\\Users\\tcr1n15\\AppData\\Local\\Programs\\Ollama\\ollama.exe"
+    },
+    {
         "name": "Surf VPN",
         "status": true,
         "Module": "C:\\Program Files (x86)\\Surfshark\\Surfshark.exe"

@@ -1,32 +1,38 @@
 [
     {
         "name": "Server ClickUp",
-        "status": true,
-        "Module": "ClickUP_get_tasks_json.py"
+        "status": false,
+        "Module": "ClickUP_get_tasks_json.py",
+        "launcher": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\launcher\\StartClickUpServer.bat"
     },
     {
         "name": "Self.Main Server Backend",
         "status": true,
-        "Module": "Record_Time_Server.py"
+        "Module": "Record_Time_Server.py",
+        "launcher": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\launcher\\Server_Notification_from_Phone.bat"
     },
     {
         "name": "Accounting",
         "status": true,
-        "Module": "main_accounting.py"
+        "Module": "main_accounting.py",
+        "launcher": "C:\\Users\\tcr1n15\\PycharmProjects\\Accounting\\TaskScheduler\\finance_check.bat"
     },
     {
         "name": "Resources Monitor",
         "status": false,
-        "Module": "MAIN_resource_monitor.py"
+        "Module": "MAIN_resource_monitor.py",
+        "launcher": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\AutomationStatus\\process_launchers\\resource_monitor.bat"
     },
     {
         "name": "Social Media Manager Post Engine",
         "status": false,
-        "Module": "MAIN_PostCommentSelenium.py"
+        "Module": "MAIN_PostCommentSelenium.py",
+        "launcher": "C:\\Users\\tcr1n15\\PycharmProjects\\SocialMediaManager\\launchers\\make_post_selenium.bat"
     },
     {
         "name": "Social Media Manager Comment Writer",
         "status": false,
-        "Module": "MAIN_Make_First_Post.py"
+        "Module": "MAIN_Make_First_Post.py",
+        "launcher": "C:\\Users\\tcr1n15\\PycharmProjects\\SocialMediaManager\\launchers\\Make_First_Post.bat"
     }
 ]
