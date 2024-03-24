@@ -13,7 +13,7 @@
     },
     {
         "name": "Accounting",
-        "status": true,
+        "status": false,
         "Module": "main_accounting.py",
         "launcher": "C:\\Users\\tcr1n15\\PycharmProjects\\Accounting\\TaskScheduler\\finance_check.bat"
     },
@@ -31,7 +31,7 @@
     },
     {
         "name": "Social Media Manager Comment Writer",
-        "status": false,
+        "status": true,
         "Module": "MAIN_Make_First_Post.py",
         "launcher": "C:\\Users\\tcr1n15\\PycharmProjects\\SocialMediaManager\\launchers\\Make_First_Post.bat"
     }
