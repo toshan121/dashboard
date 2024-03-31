@@ -4,7 +4,7 @@
         "Description": "Downloads with Pis. Note: 0.00002MB~5char",
         "Module": "PiCluster",
         "Department": "Quant",
-        "RunTime": "2024-03-29_07-47-57",
+        "RunTime": "2024-03-31_09-21-38",
         "Mb_change_required": 0.001,
         "current_size": 4692.521272659302,
         "changed": false,
@@ -15,9 +15,9 @@
         "Description": "Is monitoring system running",
         "Module": "AutomationStatus",
         "Department": "Operations",
-        "RunTime": "2024-03-29_07-56-43",
+        "RunTime": "2024-03-31_09-43-17",
         "Mb_change_required": 2.1e-06,
-        "current_size": 0.00022029876708984375,
+        "current_size": 0.000240325927734375,
         "changed": true,
         "size_difference": 2.002716064453125e-05
     },
@@ -26,9 +26,9 @@
         "Description": "External Ping",
         "Module": "AutomationStatus",
         "Department": "Operations",
-        "RunTime": "2024-03-29_07-56-43",
+        "RunTime": "2024-03-31_09-43-17",
         "Mb_change_required": 2.1e-05,
-        "current_size": 0.0038909912109375,
+        "current_size": 0.004119873046875,
         "changed": true,
         "size_difference": 0.0002288818359375
     },
@@ -37,9 +37,9 @@
         "Description": "Process/task Monitoring for: Are all processes runnning.",
         "Module": "AutomationStatus",
         "Department": "Operations",
-        "RunTime": "2024-03-29_07-56-43",
+        "RunTime": "2024-03-31_09-43-17",
         "Mb_change_required": 2.1e-05,
-        "current_size": 0.037711143493652344,
+        "current_size": 0.040299415588378906,
         "changed": true,
         "size_difference": 0.0025882720947265625
     },
@@ -48,51 +48,51 @@
         "Description": "Are ClickUp tasks being checked?",
         "Module": "ClickUPAPI",
         "Department": "ExecutiveBoard",
-        "RunTime": "2024-03-29_07-56-43",
+        "RunTime": "2024-03-31_09-43-17",
         "Mb_change_required": 2.1e-05,
-        "current_size": 0.14173412322998047,
-        "changed": false,
-        "size_difference": 0.0
+        "current_size": 0.14638137817382812,
+        "changed": true,
+        "size_difference": 0.004647254943847656
     },
     {
         "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\FitBiT\\fitbit_data/",
         "Description": "Is Employee Healthy?",
         "Module": "ClickUPAPI",
         "Department": "Operations",
-        "RunTime": "2024-03-29_07-56-43",
+        "RunTime": "2024-03-31_09-43-17",
         "Mb_change_required": 2.1e-05,
-        "current_size": 0.007884979248046875,
+        "current_size": 0.008107185363769531,
         "changed": true,
-        "size_difference": 0.00017261505126953125
+        "size_difference": 0.00022220611572265625
     },
     {
         "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\data\\final_scores",
         "Description": "Has Personal Assistant created todays agenda?",
         "Module": "DailyReport",
         "Department": "ExecutiveBoard",
-        "RunTime": "2024-03-29_07-56-43",
+        "RunTime": "2024-03-31_09-43-17",
         "Mb_change_required": 2.1e-05,
-        "current_size": 0.019242286682128906,
-        "changed": false,
-        "size_difference": 0.0
+        "current_size": 0.021178245544433594,
+        "changed": true,
+        "size_difference": 0.0019359588623046875
     },
     {
         "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\Accounting\\data",
         "Description": "Has accountant fetched data from Bank?",
         "Module": "Accounting",
         "Department": "Finance",
-        "RunTime": "2024-03-29_07-56-43",
+        "RunTime": "2024-03-31_09-43-17",
         "Mb_change_required": 2e-05,
-        "current_size": 1.3720359802246094,
-        "changed": false,
-        "size_difference": 0.0
+        "current_size": 1.535390853881836,
+        "changed": true,
+        "size_difference": 0.16335487365722656
     },
     {
         "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\SocialMediaManager\\data_manager\\monitoring",
         "Description": "Has social Media Manager posted?",
         "Module": "SocialMediaManager",
         "Department": "Marketing/Sales",
-        "RunTime": "2024-03-29_07-56-43",
+        "RunTime": "2024-03-31_09-43-17",
         "Mb_change_required": 2.1e-05,
         "current_size": 0.0008611679077148438,
         "changed": false,
@@ -103,10 +103,10 @@
         "Description": "Were new Tags created?",
         "Module": "Quant",
         "Department": "Quant",
-        "RunTime": "2024-03-29_07-56-43",
+        "RunTime": "2024-03-31_09-43-17",
         "Mb_change_required": 2.1e-05,
-        "current_size": 0.042400360107421875,
-        "changed": false,
-        "size_difference": 0.0
+        "current_size": 0.04277324676513672,
+        "changed": true,
+        "size_difference": 0.00037288665771484375
     }
 ]

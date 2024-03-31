@@ -1,13 +1,13 @@
 [
     {
         "name": "Server ClickUp",
-        "status": false,
+        "status": true,
         "Module": "ClickUP_get_tasks_json.py",
         "launcher": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\launcher\\StartClickUpServer.bat"
     },
     {
         "name": "Self.Main Server Backend",
-        "status": false,
+        "status": true,
         "Module": "Record_Time_Server.py",
         "launcher": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\launcher\\Server_Notification_from_Phone.bat"
     },
@@ -19,7 +19,7 @@
     },
     {
         "name": "Resources Monitor",
-        "status": false,
+        "status": true,
         "Module": "MAIN_resource_monitor.py",
         "launcher": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\AutomationStatus\\process_launchers\\resource_monitor.bat"
     },
