@@ -1,7 +1,7 @@
 [
     {
         "name": "Server ClickUp",
-        "status": true,
+        "status": false,
         "Module": "ClickUP_get_tasks_json.py",
         "launcher": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\launcher\\StartClickUpServer.bat"
     },

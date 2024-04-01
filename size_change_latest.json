@@ -4,20 +4,20 @@
         "Description": "Downloads with Pis. Note: 0.00002MB~5char",
         "Module": "PiCluster",
         "Department": "Quant",
-        "RunTime": "2024-03-31_09-21-38",
+        "RunTime": "2024-04-01_07-47-37",
         "Mb_change_required": 0.001,
-        "current_size": 4692.521272659302,
-        "changed": false,
-        "size_difference": 0.0
+        "current_size": 5437.016229629517,
+        "changed": true,
+        "size_difference": 744.4949569702148
     },
     {
         "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\AutomationStatus\\Size_Change\\size_change_runs.txt",
         "Description": "Is monitoring system running",
         "Module": "AutomationStatus",
         "Department": "Operations",
-        "RunTime": "2024-03-31_09-43-17",
+        "RunTime": "2024-04-01_07-53-16",
         "Mb_change_required": 2.1e-06,
-        "current_size": 0.000240325927734375,
+        "current_size": 0.00026035308837890625,
         "changed": true,
         "size_difference": 2.002716064453125e-05
     },
@@ -26,9 +26,9 @@
         "Description": "External Ping",
         "Module": "AutomationStatus",
         "Department": "Operations",
-        "RunTime": "2024-03-31_09-43-17",
+        "RunTime": "2024-04-01_07-53-16",
         "Mb_change_required": 2.1e-05,
-        "current_size": 0.004119873046875,
+        "current_size": 0.0043487548828125,
         "changed": true,
         "size_difference": 0.0002288818359375
     },
@@ -37,62 +37,62 @@
         "Description": "Process/task Monitoring for: Are all processes runnning.",
         "Module": "AutomationStatus",
         "Department": "Operations",
-        "RunTime": "2024-03-31_09-43-17",
+        "RunTime": "2024-04-01_07-53-16",
         "Mb_change_required": 2.1e-05,
-        "current_size": 0.040299415588378906,
+        "current_size": 0.04288196563720703,
         "changed": true,
-        "size_difference": 0.0025882720947265625
+        "size_difference": 0.002582550048828125
     },
     {
         "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\data\\tasks_agenda",
         "Description": "Are ClickUp tasks being checked?",
         "Module": "ClickUPAPI",
         "Department": "ExecutiveBoard",
-        "RunTime": "2024-03-31_09-43-17",
+        "RunTime": "2024-04-01_07-53-16",
         "Mb_change_required": 2.1e-05,
         "current_size": 0.14638137817382812,
-        "changed": true,
-        "size_difference": 0.004647254943847656
+        "changed": false,
+        "size_difference": 0.0
     },
     {
         "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\FitBiT\\fitbit_data/",
         "Description": "Is Employee Healthy?",
         "Module": "ClickUPAPI",
         "Department": "Operations",
-        "RunTime": "2024-03-31_09-43-17",
+        "RunTime": "2024-04-01_07-53-16",
         "Mb_change_required": 2.1e-05,
-        "current_size": 0.008107185363769531,
+        "current_size": 0.008279800415039062,
         "changed": true,
-        "size_difference": 0.00022220611572265625
+        "size_difference": 0.00017261505126953125
     },
     {
         "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\data\\final_scores",
         "Description": "Has Personal Assistant created todays agenda?",
         "Module": "DailyReport",
         "Department": "ExecutiveBoard",
-        "RunTime": "2024-03-31_09-43-17",
+        "RunTime": "2024-04-01_07-53-16",
         "Mb_change_required": 2.1e-05,
         "current_size": 0.021178245544433594,
-        "changed": true,
-        "size_difference": 0.0019359588623046875
+        "changed": false,
+        "size_difference": 0.0
     },
     {
         "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\Accounting\\data",
         "Description": "Has accountant fetched data from Bank?",
         "Module": "Accounting",
         "Department": "Finance",
-        "RunTime": "2024-03-31_09-43-17",
+        "RunTime": "2024-04-01_07-53-16",
         "Mb_change_required": 2e-05,
-        "current_size": 1.535390853881836,
+        "current_size": 1.6756572723388672,
         "changed": true,
-        "size_difference": 0.16335487365722656
+        "size_difference": 0.14026641845703125
     },
     {
         "full_path": "C:\\Users\\tcr1n15\\PycharmProjects\\SocialMediaManager\\data_manager\\monitoring",
         "Description": "Has social Media Manager posted?",
         "Module": "SocialMediaManager",
         "Department": "Marketing/Sales",
-        "RunTime": "2024-03-31_09-43-17",
+        "RunTime": "2024-04-01_07-53-16",
         "Mb_change_required": 2.1e-05,
         "current_size": 0.0008611679077148438,
         "changed": false,
@@ -103,10 +103,10 @@
         "Description": "Were new Tags created?",
         "Module": "Quant",
         "Department": "Quant",
-        "RunTime": "2024-03-31_09-43-17",
+        "RunTime": "2024-04-01_07-53-16",
         "Mb_change_required": 2.1e-05,
-        "current_size": 0.04277324676513672,
+        "current_size": 0.047607421875,
         "changed": true,
-        "size_difference": 0.00037288665771484375
+        "size_difference": 0.004834175109863281
     }
 ]
