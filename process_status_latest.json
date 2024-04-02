@@ -19,7 +19,7 @@
     },
     {
         "name": "Resources Monitor",
-        "status": true,
+        "status": false,
         "Module": "MAIN_resource_monitor.py",
         "launcher": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\AutomationStatus\\process_launchers\\resource_monitor.bat"
     },
