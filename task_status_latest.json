@@ -36,7 +36,7 @@
     },
     {
         "name": "Surf VPN",
-        "status": false,
+        "status": true,
         "Module": "C:\\Program Files (x86)\\Surfshark\\Surfshark.exe"
     }
 ]
