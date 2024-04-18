@@ -1,83 +1,70 @@
 ```html
-<style>
-  body {
-    font-family: Arial, sans-serif;
-  }
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+      text-align: center;
+    }
+    .positive {
+      color: green;
+    }
+    .negative {
+      color: red;
+    }
+  </style>
+</head>
+<body>
 
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
+  <h2>Overall Score</h2>
 
-  td, th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-
-  .low {
-    color: red;
-  }
-
-  .medium {
-    color: orange;
-  }
-
-  .high {
-    color: green;
-  }
-</style>
-
-<h1>Overall Score</h1>
-
-<table>
-  <thead>
+  <table>
     <tr>
       <th>Category</th>
       <th>Score</th>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td>Sleep quality</td>
-      <td class="medium">70%</td>
+      <td>60%</td>
     </tr>
     <tr>
       <td>Productivity</td>
-      <td class="medium">65%</td>
+      <td>70%</td>
     </tr>
     <tr>
-      <td>Tasks completed, overdued, deficit</td>
-      <td class="low">40%</td>
+      <td>Tasks completed, overdue, deficit</td>
+      <td>50%</td>
     </tr>
     <tr>
       <td>Activities</td>
-      <td class="medium">60%</td>
+      <td>60%</td>
     </tr>
     <tr>
-      <td>Cash flow,burn,runway</td>
-      <td class="low">20%</td>
+      <td>Cash flow, burn, runway</td>
+      <td>20%</td>
     </tr>
     <tr>
       <td>Punctuality</td>
-      <td class="high">90%</td>
+      <td>100%</td>
     </tr>
-  </tbody>
-</table>
+  </table>
 
-<h3>Summary:</h3>
+  <h3>Comments</h3>
 
-<ul>
-  <li>Overall, the scores are average.</li>
-  <li>Sleep quality, productivity, and activities are all in the medium range.</li>
-  <li>Tasks completed, overdued, deficit, and cash flow,burn,runway are both in the low range.</li>
-  <li>Punctuality is the only category that is in the high range.</li>
-</ul>
+  <ul>
+    <li>Sleep quality is below average. It is important to get enough sleep to improve overall health and well-being.</li>
+    <li>Productivity is above average. This is a positive sign, but it is important to continue to work on improving productivity.</li>
+    <li>Tasks completed, overdue, deficit is below average. This indicates that there is room for improvement in task management.</li>
+    <li>Activities are above average. This is a positive sign, but it is important to continue to engage in a variety of activities to maintain a healthy lifestyle.</li>
+    <li>Cash flow, burn, runway is below average. This is a major concern and it is important to take steps to improve cash flow.</li>
+    <li>Punctuality is above average. This is a positive sign, but it is important to continue to be punctual to maintain a good reputation.</li>
+  </ul>
 
-<h3>Action:</h3>
-
-<ul>
-  <li>Focus on improving tasks completed, overdued, deficit, and cash flow,burn,runway.</li>
-  <li>Consider seeking professional help to improve sleep quality and productivity.</li>
-  <li>Continue to maintain good punctuality.</li>
-</ul>
+</body>
+</html>
 ```
