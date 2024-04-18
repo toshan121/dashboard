@@ -1,27 +1,33 @@
 ```html
 <style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
   table {
     border-collapse: collapse;
     width: 100%;
   }
 
   td, th {
-    border: 1px solid black;
-    padding: 5px;
+    border: 1px solid #ddd;
+    padding: 8px;
   }
 
-  .good {
-    color: green;
+  .low {
+    color: red;
   }
 
-  .ok {
+  .medium {
     color: orange;
   }
 
-  .bad {
-    color: red;
+  .high {
+    color: green;
   }
 </style>
+
+<h1>Overall Score</h1>
 
 <table>
   <thead>
@@ -32,48 +38,46 @@
   </thead>
   <tbody>
     <tr>
-      <td>Punctuality</td>
-      <td class="good">90%</td>
-    </tr>
-    <tr>
       <td>Sleep quality</td>
-      <td class="ok">70%</td>
+      <td class="medium">70%</td>
     </tr>
     <tr>
       <td>Productivity</td>
-      <td class="good">80%</td>
+      <td class="medium">65%</td>
     </tr>
     <tr>
       <td>Tasks completed, overdued, deficit</td>
-      <td class="ok">75%</td>
+      <td class="low">40%</td>
     </tr>
     <tr>
       <td>Activities</td>
-      <td class="ok">70%</td>
+      <td class="medium">60%</td>
     </tr>
     <tr>
       <td>Cash flow,burn,runway</td>
-      <td class="bad">20%</td>
+      <td class="low">20%</td>
+    </tr>
+    <tr>
+      <td>Punctuality</td>
+      <td class="high">90%</td>
     </tr>
   </tbody>
 </table>
 
-**Overall score:** 65%
+<h3>Summary:</h3>
 
-**Comments:**
+<ul>
+  <li>Overall, the scores are average.</li>
+  <li>Sleep quality, productivity, and activities are all in the medium range.</li>
+  <li>Tasks completed, overdued, deficit, and cash flow,burn,runway are both in the low range.</li>
+  <li>Punctuality is the only category that is in the high range.</li>
+</ul>
 
-* Punctuality is excellent.
-* Sleep quality is good, but could be improved.
-* Productivity is good, but there is always room for improvement.
-* The number of tasks completed, overdue, and deficit is acceptable, but could be improved.
-* Activities are balanced, but could be more varied.
-* Cash flow, burn, and runway are poor and need immediate attention.
+<h3>Action:</h3>
 
-**Recommendations:**
-
-* Continue to focus on punctuality.
-* Improve sleep quality by establishing a regular sleep schedule and creating a relaxing bedtime routine.
-* Identify and address any productivity bottlenecks.
-* Prioritize completing tasks and reducing overdue and deficit tasks.
-* Diversify activities and engage in more fulfilling activities.
-* Take immediate action to reduce expenses and/or increase revenue to improve cash flow, burn, and runway.
+<ul>
+  <li>Focus on improving tasks completed, overdued, deficit, and cash flow,burn,runway.</li>
+  <li>Consider seeking professional help to improve sleep quality and productivity.</li>
+  <li>Continue to maintain good punctuality.</li>
+</ul>
+```
