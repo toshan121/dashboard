@@ -1,68 +1,83 @@
 ```html
-<style>
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
+<html>
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 5px;
+    }
+    .good {
+      background-color: green;
+    }
+    .ok {
+      background-color: yellow;
+    }
+    .bad {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Overall Score</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sleep quality</td>
+        <td class="ok">70%</td>
+      </tr>
+      <tr>
+        <td>Productivity</td>
+        <td class="good">90%</td>
+      </tr>
+      <tr>
+        <td>Tasks completed, overdued, deficit</td>
+        <td class="ok">80%</td>
+      </tr>
+      <tr>
+        <td>Activities</td>
+        <td class="good">90%</td>
+      </tr>
+      <tr>
+        <td>Cash flow,burn,runway</td>
+        <td class="bad">50%</td>
+      </tr>
+      <tr>
+        <td>Punctuality</td>
+        <td class="ok">80%</td>
+      </tr>
+    </tbody>
+  </table>
 
-th, td {
-  border: 1px solid black;
-  text-align: center;
-  padding: 5px;
-}
-</style>
+  <h2>Comments</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Category</th>
-      <th>Score</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sleep quality</td>
-      <td>70%</td>
-    </tr>
-    <tr>
-      <td>Productivity</td>
-      <td>60%</td>
-    </tr>
-    <tr>
-      <td>Tasks completed, overdued, deficit</td>
-      <td>50%</td>
-    </tr>
-    <tr>
-      <td>Activities</td>
-      <td>40%</td>
-    </tr>
-    <tr>
-      <td>Cash flow,burn,runway.</td>
-      <td>30%</td>
-    </tr>
-    <tr>
-      <td>Punctuality</td>
-      <td>100%</td>
-    </tr>
-  </tbody>
-</table>
+  <p>Overall, your performance is good. You are sleeping well, being productive, and completing your tasks on time. However, you need to improve your cash flow and runway.</p>
 
-**Overall score:** 50%
+  <p>Here are some specific recommendations:</p>
 
-**Comments:**
-
-* Sleep quality is good, but could be improved by getting more sleep and establishing a regular sleep schedule.
-* Productivity is good, but could be improved by reducing distractions and taking breaks throughout the day.
-* The number of tasks completed is good, but there are a significant number of overdue tasks.
-* The variety of activities is good, but the amount of time spent on each activity could be more balanced.
-* Cash flow is poor, and the company is at risk of running out of money.
-* Punctuality is excellent.
-
-**Recommendations:**
-
-* Improve sleep quality by getting more sleep and establishing a regular sleep schedule.
-* Improve productivity by reducing distractions and taking breaks throughout the day.
-* Reduce the number of overdue tasks by prioritizing tasks and delegating when possible.
-* Balance the amount of time spent on each activity.
-* Improve cash flow by increasing revenue and/or decreasing expenses.
+  <ul>
+    <li>Go to bed and wake up at the same time each day, even on weekends.</li>
+    <li>Create a relaxing bedtime routine.</li>
+    <li>Make sure your bedroom is dark, quiet, and cool.</li>
+    <li>Avoid caffeine and alcohol before bed.</li>
+    <li>Get regular exercise.</li>
+    <li>Eat a healthy diet.</li>
+    <li>Take breaks throughout the day.</li>
+    <li>Set priorities and delegate tasks.</li>
+    <li>Use a to-do list or planner.</li>
+    <li>Reward yourself for completing tasks.</li>
+    <li>Increase revenue.</li>
+    <li>Reduce expenses.</li>
+    <li>Raise additional capital.</li>
+  </ul>
+</body>
+</html>
 ```
