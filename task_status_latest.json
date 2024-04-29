@@ -1,12 +1,12 @@
 [
     {
         "name": "GoogleDriveFS",
-        "status": true,
+        "status": false,
         "Module": "C:\\Program Files\\Google\\Drive File Stream\\86.0.9.0\\GoogleDriveFS.exe"
     },
     {
         "name": "Redis Server",
-        "status": false,
+        "status": true,
         "Module": "C:\\Program Files\\Memurai\\memurai.exe"
     },
     {
@@ -21,7 +21,7 @@
     },
     {
         "name": "ClickUp",
-        "status": true,
+        "status": false,
         "Module": "C:\\Users\\tcr1n15\\AppData\\Local\\Programs\\ClickUp\\ClickUp.exe"
     },
     {
@@ -31,12 +31,12 @@
     },
     {
         "name": "Ollama",
-        "status": true,
+        "status": false,
         "Module": "C:\\Users\\tcr1n15\\AppData\\Local\\Programs\\Ollama\\ollama.exe"
     },
     {
         "name": "Surf VPN",
-        "status": true,
+        "status": false,
         "Module": "C:\\Program Files (x86)\\Surfshark\\Surfshark.exe"
     }
 ]
