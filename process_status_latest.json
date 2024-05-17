@@ -7,7 +7,7 @@
     },
     {
         "name": "Self.Main Server Backend",
-        "status": true,
+        "status": false,
         "Module": "Record_Time_Server.py",
         "launcher": "C:\\Users\\tcr1n15\\PycharmProjects\\ClickUpApi\\launcher\\Server_Notification_from_Phone.bat"
     },
