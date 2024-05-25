@@ -16,7 +16,7 @@
     },
     {
         "name": "SharePoint",
-        "status": true,
+        "status": false,
         "Module": "C:\\Users\\tcr1n15\\AppData\\Local\\Microsoft\\OneDrive\\24.020.0128.0003\\Microsoft.SharePoint.exe"
     },
     {
