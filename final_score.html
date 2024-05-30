@@ -1,76 +1,58 @@
 ```html
-<!DOCTYPE html>
 <html>
 <head>
-  <style>
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    th, td {
-      border: 1px solid black;
-      padding: 5px;
-    }
-
-    .good {
-      color: green;
-    }
-
-    .ok {
-      color: orange;
-    }
-
-    .bad {
-      color: red;
-    }
-  </style>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+</style>
 </head>
 <body>
-  <h1>Overall Scores</h1>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Category</th>
-        <th>Score</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Sleep quality</td>
-        <td class="ok">70%</td>
-      </tr>
-      <tr>
-        <td>Productivity</td>
-        <td class="good">85%</td>
-      </tr>
-      <tr>
-        <td>Tasks completed, overdued, deficit</td>
-        <td class="ok">75%</td>
-      </tr>
-      <tr>
-        <td>Activities</td>
-        <td class="good">80%</td>
-      </tr>
-      <tr>
-        <td>Cash flow,burn,runway</td>
-        <td class="bad">50%</td>
-      </tr>
-      <tr>
-        <td>Punctuality</td>
-        <td class="good">100%</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h2>Overall</h2>
-
-  <p>Your overall score is 75%. This is a good score, but there are some areas where you can improve.</p>
-
-  <p>One area to focus on is your cash flow, burn, and runway. You are currently burning cash at a rate of $1,000 per week, and you have only $700 left in the bank. This means that you have an estimated runway of only 0.7 months.</p>
-
-  <p>To improve your cash flow, you can increase revenue or reduce expenses. You can also consider raising additional capital.</p>
+<h1>Overall Scores</h1>
+<p><strong>Analysis:</strong> Based on the provided data, the overall scores are as follows:</p>
+<ul>
+  <li>Sleep quality: 50%</li>
+  <li>Productivity: 60%</li>
+  <li>Tasks completed, overdued, deficit: 60%</li>
+  <li>Activities: 70%</li>
+  <li>Cash flow,burn,runway: 50%</li>
+  <li>Punctuality: 100%</li>
+</ul>
+<p><strong>Action:</strong> Based on these scores, it is recommended to focus on improving sleep quality, productivity, and cash flow. The team is doing well in terms of tasks completed, activities, and punctuality.</p>
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Score</th>
+  </tr>
+  <tr>
+    <td>Sleep quality</td>
+    <td>50%</td>
+  </tr>
+  <tr>
+    <td>Productivity</td>
+    <td>60%</td>
+  </tr>
+  <tr>
+    <td>Tasks completed, overdued, deficit</td>
+    <td>60%</td>
+  </tr>
+  <tr>
+    <td>Activities</td>
+    <td>70%</td>
+  </tr>
+  <tr>
+    <td>Cash flow,burn,runway</td>
+    <td>50%</td>
+  </tr>
+  <tr>
+    <td>Punctuality</td>
+    <td>100%</td>
+  </tr>
+</table>
 </body>
 </html>
 ```
