@@ -1,58 +1,74 @@
 ```html
-<html>
-<head>
 <style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 5px;
-}
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .positive {
+    color: red;
+  }
+
+  .negative {
+    color: green;
+  }
 </style>
-</head>
-<body>
-<h1>Overall Scores</h1>
-<p><strong>Analysis:</strong> Based on the provided data, the overall scores are as follows:</p>
-<ul>
-  <li>Sleep quality: 50%</li>
-  <li>Productivity: 60%</li>
-  <li>Tasks completed, overdued, deficit: 60%</li>
-  <li>Activities: 70%</li>
-  <li>Cash flow,burn,runway: 50%</li>
-  <li>Punctuality: 100%</li>
-</ul>
-<p><strong>Action:</strong> Based on these scores, it is recommended to focus on improving sleep quality, productivity, and cash flow. The team is doing well in terms of tasks completed, activities, and punctuality.</p>
+
 <table>
-  <tr>
-    <th>Category</th>
-    <th>Score</th>
-  </tr>
-  <tr>
-    <td>Sleep quality</td>
-    <td>50%</td>
-  </tr>
-  <tr>
-    <td>Productivity</td>
-    <td>60%</td>
-  </tr>
-  <tr>
-    <td>Tasks completed, overdued, deficit</td>
-    <td>60%</td>
-  </tr>
-  <tr>
-    <td>Activities</td>
-    <td>70%</td>
-  </tr>
-  <tr>
-    <td>Cash flow,burn,runway</td>
-    <td>50%</td>
-  </tr>
-  <tr>
-    <td>Punctuality</td>
-    <td>100%</td>
-  </tr>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sleep quality</td>
+      <td>70%</td>
+    </tr>
+    <tr>
+      <td>Productivity</td>
+      <td>65%</td>
+    </tr>
+    <tr>
+      <td>Tasks completed, overdued, deficit</td>
+      <td>50%</td>
+    </tr>
+    <tr>
+      <td>Activities</td>
+      <td>60%</td>
+    </tr>
+    <tr>
+      <td>Cash flow,burn,runway.</td>
+      <td>20%</td>
+    </tr>
+    <tr>
+      <td>Punctuality</td>
+      <td>100%</td>
+    </tr>
+  </tbody>
 </table>
-</body>
-</html>
-```
+
+**Overall score:** 60%
+
+**Comments:**
+
+* Overall, the persona is doing well, with a score of 60%.
+* The persona is doing well in terms of sleep quality, productivity, and punctuality.
+* The persona is doing okay in terms of tasks completed, overdued, and deficit, as well as activities.
+* The persona is not doing well in terms of cash flow, burn, and runway.
+
+**Actions:**
+
+* The persona should continue to focus on improving their sleep quality, productivity, and punctuality.
+* The persona should also focus on improving their task completion rate and reducing their overdue and deficit tasks.
+* The persona should also focus on improving their cash flow and reducing their burn rate.
