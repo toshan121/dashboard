@@ -6,7 +6,7 @@
     },
     {
         "name": "Redis Server",
-        "status": true,
+        "status": false,
         "Module": "C:\\Program Files\\Memurai\\memurai.exe"
     },
     {
