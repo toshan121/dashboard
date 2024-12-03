@@ -4,7 +4,7 @@ pipeline{
 
     environment{
        ArtifactId = 'readMavenPom().getArtifactId()'
-       Version = 1
+       Version = '1'
        Name = 'readMavenPom().getName()'
        GroupId = 'readMavenPom().getGroupId()'
     }
@@ -26,28 +26,18 @@ pipeline{
             }
         }
 
-        // Stage3.1 : Publish the source code to Sonarqube
-        stage ('Sonarqube Analysis'){
-            steps {
-                echo ' Source code published to Sonarqube for SCA......'
-                withSonarQubeEnv('sonarqube'){ // You can override the credential to be used
-                     sh 'mvn sonar:sonar'
-                }
-
-            }
-        }
 
 
 
         stage('SonarQube Analysis') {
             steps {
                 echo 'Source code published to SonarQube for SCA...'
-                withSonarQubeEnv('sonarqube') { 
+                withSonarQubeEnv('sonarqube') {
                     sh 'sonar-scanner \
                         -Dsonar.projectKey=my-python-project \
                         -Dsonar.sources=. \
-                        -Dsonar.host.url=http://your-sonarqube-server:9000 \
-                        -Dsonar.login=your-sonarqube-token'
+                        -Dsonar.host.url=http://192.168.0.61:9900 \
+                        -Dsonar.login=sqa_c177434b746bab59eec2dd96619ab9317bf7e1ae'
                 }
             }
         }
@@ -59,17 +49,17 @@ pipeline{
 
                 def NexusRepo = Version.endsWith("SNAPSHOT") ? "raw-release" : "raw-release"
 
-                nexusArtifactUploader artifacts: 
-                [[artifactId: "${ArtifactId}", 
-                classifier: '', 
-                file: "main.py", 
-                type: 'war']], 
-                credentialsId: '35e9b26e-269a-4804-a70d-6b2ec7a608ce', 
-                groupId: "${GroupId}", 
-                nexusUrl: '192.168.0.61:8081', 
-                nexusVersion: 'nexus3', 
-                protocol: 'http', 
-                repository: "${NexusRepo}", 
+                nexusArtifactUploader artifacts:
+                [[artifactId: "${ArtifactId}",
+                classifier: '',
+                file: "main.py",
+                type: 'file']],
+                credentialsId: '35e9b26e-269a-4804-a70d-6b2ec7a608ce',
+                groupId: "${GroupId}",
+                nexusUrl: '192.168.0.61:8081',
+                nexusVersion: 'nexus3',
+                protocol: 'http',
+                repository: "${NexusRepo}",
                 version: "${Version}"
              }
             }
@@ -85,49 +75,49 @@ pipeline{
                     }
                 }
 
-        // Stage 5 : Deploying the build artifact to Apache Tomcat
-        stage ('Deploy to Tomcat'){
-            steps {
-                echo "Deploying ...."
-                sshPublisher(publishers: 
-                [sshPublisherDesc(
-                    configName: 'Ansible_Controller', 
-                    transfers: [
-                        sshTransfer(
-                                cleanRemote:false,
-                                execCommand: 'ansible-playbook /opt/playbooks/downloadanddeploy_as_tomcat_user.yaml -i /opt/playbooks/hosts',
-                                execTimeout: 120000
-                        )
-                    ], 
-                    usePromotionTimestamp: false, 
-                    useWorkspaceInPromotion: false, 
-                    verbose: false)
-                    ])
-            
-            }
-        }
-
-    // Stage 6 : Deploying the build artifact to Docker
-        stage ('Deploy to Docker'){
-            steps {
-                echo "Deploying ...."
-                sshPublisher(publishers: 
-                [sshPublisherDesc(
-                    configName: 'Ansible_Controller', 
-                    transfers: [
-                        sshTransfer(
-                                cleanRemote:false,
-                                execCommand: 'ansible-playbook /opt/playbooks/downloadanddeploy_docker.yaml -i /opt/playbooks/hosts',
-                                execTimeout: 120000
-                        )
-                    ], 
-                    usePromotionTimestamp: false, 
-                    useWorkspaceInPromotion: false, 
-                    verbose: false)
-                    ])
-            
-            }
-        }
+//         // Stage 5 : Deploying the build artifact to Apache Tomcat
+//         stage ('Deploy to Tomcat'){
+//             steps {
+//                 echo "Deploying ...."
+//                 sshPublisher(publishers:
+//                 [sshPublisherDesc(
+//                     configName: 'Ansible_Controller',
+//                     transfers: [
+//                         sshTransfer(
+//                                 cleanRemote:false,
+//                                 execCommand: 'ansible-playbook /opt/playbooks/downloadanddeploy_as_tomcat_user.yaml -i /opt/playbooks/hosts',
+//                                 execTimeout: 120000
+//                         )
+//                     ],
+//                     usePromotionTimestamp: false,
+//                     useWorkspaceInPromotion: false,
+//                     verbose: false)
+//                     ])
+// 
+//             }
+//         }
+// 
+//     // Stage 6 : Deploying the build artifact to Docker
+//         stage ('Deploy to Docker'){
+//             steps {
+//                 echo "Deploying ...."
+//                 sshPublisher(publishers:
+//                 [sshPublisherDesc(
+//                     configName: 'Ansible_Controller',
+//                     transfers: [
+//                         sshTransfer(
+//                                 cleanRemote:false,
+//                                 execCommand: 'ansible-playbook /opt/playbooks/downloadanddeploy_docker.yaml -i /opt/playbooks/hosts',
+//                                 execTimeout: 120000
+//                         )
+//                     ],
+//                     usePromotionTimestamp: false,
+//                     useWorkspaceInPromotion: false,
+//                     verbose: false)
+//                     ])
+// 
+//             }
+//         }
 
 
 
