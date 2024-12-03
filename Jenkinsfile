@@ -64,10 +64,32 @@ stage('SonarQube Analysis') {
 
 
 
+stage('Deploy to Agent') {
+    steps {
+        echo "Deploying to agent..."
+        sshPublisher(publishers: [
+            sshPublisherDesc(
+                configName: 'your-ssh-config-name',
+                transfers: [
+                    sshTransfer(
+                        sourceFiles: 'main.py',
+                        remoteDirectory: '~/deployments/${JOB_NAME}',
+                        execCommand: '''
+                            #!/bin/bash
+                            cd ~/deployments/"${JOB_NAME}"
 
-
-        // Stage 4 : Print some information (removed since we don't have Maven)
-
-        // Stage 5 and 6 (Deploy to Tomcat and Docker) are commented out
+                            # Check if a process with the same name is already running
+                            if pm2 status my-app | grep -q "online"; then
+                                echo "Application is already running. Skipping deployment."
+                            else
+                                pm2 start main.py --name my-app --interpreter python3
+                            fi
+                        '''
+                    )
+                ]
+            )
+        ])
+    }
+}
     }
 }
