@@ -25,18 +25,12 @@ pipeline {
             }
         }
 
-stage('SonarQube Analysis') {
-    steps {
-        echo 'Starting SonarQube analysis...'
-        withSonarQubeEnv('sonarqube') { // 'sonarqube' is the name configured in Jenkins for the SonarQube server
-            sh '''
-                sonar-scanner \
-                -Dsonar.projectKey=my-python-project \
-                -Dsonar.sources=. \
-                -Dsonar.host.url=$SONAR_HOST_URL
-            '''
-        }
-    }
+stage('SonarQube analysis') {
+  // requires SonarQube Scanner 2.8+
+  def scannerHome = tool 'SonarQube Scanner 2.8';
+  withSonarQubeEnv('My SonarQube Server') {
+    sh "${scannerHome}/bin/sonar-scanner"
+  }
 }
 
 
