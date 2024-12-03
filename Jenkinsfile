@@ -9,12 +9,12 @@ pipeline {
             }
         }
 
-        stage('Checkout') {
-            steps {
-                // Replace with your actual Git repository URL and branch
-                git branch: 'main', url: 'https://github.com/toshan121/dashboard.git' 
-            }
-        }
+        // stage('Checkout') {
+        //     steps {
+        //         // Replace with your actual Git repository URL and branch
+        //         git branch: 'main', url: 'https://github.com/toshan121/dashboard.git' 
+        //     }
+        // }
 
 
 
