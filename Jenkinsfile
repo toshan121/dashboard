@@ -39,21 +39,24 @@ stage('SonarQube Analysis') {
 
 
 
+
         stage('Publish to Nexus') {
             steps {
                 echo "Publishing to Nexus..."
                 nexusArtifactUploader(
                     artifacts: [[
+                        artifactId: 'dashboard', 
                         classifier: '',
                         file: 'main.py', 
                         type: 'file'
                     ]],
- 
+                    credentialsId: 'nexus',
+                    groupId: 'com.example.project', 
                     nexusUrl: '192.168.0.61:8081',
                     nexusVersion: 'nexus3',
                     protocol: 'http',
-                    repository: 'raw-release',  // Or your desired repository
-                    version: '1.0.0'  // Replace with your version number
+                    repository: 'raw-release', 
+                    version: '1.0.0'
                 )
             }
         }
