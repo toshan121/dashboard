@@ -25,18 +25,20 @@ pipeline {
             }
         }
 
-        stage('SonarQube Analysis') {
-            steps {
-                echo 'SonarQube analysis...'
-                withSonarQubeEnv('sonarqube') { 
-                    sh 'sonar-scanner \
-                        -Dsonar.projectKey=my-python-project \
-                        -Dsonar.sources=. \
-                        -Dsonar.host.url=http://192.168.0.61:9900 \
-                        -Dsonar.login=sqa_c177434b746bab59eec2dd96619ab9317bf7e1ae'
-                }
-            }
+stage('SonarQube Analysis') {
+    steps {
+        echo 'Starting SonarQube analysis...'
+        withSonarQubeEnv('sonarqube') { // 'sonarqube' is the name configured in Jenkins for the SonarQube server
+            sh '''
+                sonar-scanner \
+                -Dsonar.projectKey=my-python-project \
+                -Dsonar.sources=. \
+                -Dsonar.host.url=$SONAR_HOST_URL
+            '''
         }
+    }
+}
+
 
         stage('Publish to Nexus') {
             steps {
