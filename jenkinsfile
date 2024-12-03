@@ -26,6 +26,32 @@ pipeline{
             }
         }
 
+        // Stage3.1 : Publish the source code to Sonarqube
+        stage ('Sonarqube Analysis'){
+            steps {
+                echo ' Source code published to Sonarqube for SCA......'
+                withSonarQubeEnv('sonarqube'){ // You can override the credential to be used
+                     sh 'mvn sonar:sonar'
+                }
+
+            }
+        }
+
+
+
+        stage('SonarQube Analysis') {
+            steps {
+                echo 'Source code published to SonarQube for SCA...'
+                withSonarQubeEnv('sonarqube') { 
+                    sh 'sonar-scanner \
+                        -Dsonar.projectKey=my-python-project \
+                        -Dsonar.sources=. \
+                        -Dsonar.host.url=http://your-sonarqube-server:9000 \
+                        -Dsonar.login=your-sonarqube-token'
+                }
+            }
+        }
+
         // Stage3 : Publish the artifacts to Nexus
         stage ('Publish to Nexus'){
             steps {
