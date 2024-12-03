@@ -25,18 +25,6 @@ pipeline {
             }
         }
 
-        
-stage('SonarQube Analysis') {
-    steps {
-        script {
-            def scannerHome = tool 'sonarqube'
-            withSonarQubeEnv() {
-                sh "${scannerHome}/bin/sonar-scanner"
-            }
-        }
-    }
-}
-
 
 
 
@@ -60,6 +48,23 @@ stage('SonarQube Analysis') {
                 )
             }
         }
+
+        
+        
+stage('SonarQube Analysis') {
+    steps {
+        script {
+            def scannerHome = tool 'sonarqube'
+            withSonarQubeEnv() {
+                sh "${scannerHome}/bin/sonar-scanner"
+            }
+        }
+    }
+}
+
+
+
+
 
         // Stage 4 : Print some information (removed since we don't have Maven)
 
