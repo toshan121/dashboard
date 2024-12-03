@@ -44,13 +44,11 @@ stage('SonarQube Analysis') {
                 echo "Publishing to Nexus..."
                 nexusArtifactUploader(
                     artifacts: [[
-                        artifactId: 'my-artifact',  // Replace with your artifact ID
                         classifier: '',
                         file: 'main.py', 
                         type: 'file'
                     ]],
-                    credentialsId: '35e9b26e-269a-4804-a70d-6b2ec7a608ce',
-                    groupId: 'my-group',  // Replace with your group ID
+ 
                     nexusUrl: '192.168.0.61:8081',
                     nexusVersion: 'nexus3',
                     protocol: 'http',
