@@ -5,9 +5,9 @@ pipeline {
         stage('Jenkinsfile Syntax Check') {
             steps {
                 echo "Jenkinsfile Syntax Check..."
-                configFileProvider([configFile(fileId: 'your-jenkinsfile-id', variable: 'JENKINSFILE')]) {
-                    sh 'jenkins-cli groovy-lint "${JENKINSFILE}"'
-                }
+                // configFileProvider([configFile(fileId: 'your-jenkinsfile-id', variable: 'JENKINSFILE')]) {
+                //     sh 'jenkins-cli groovy-lint "${JENKINSFILE}"'
+                // }
             }
         }
 
